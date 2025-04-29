@@ -2,6 +2,7 @@
 // O Librerias que necesitaremos en el proyecto
 // en este caso sera solo express
  const express = require('express');
+ const routes = require('./routes/routes.js');
 
  // en segundo lugar se definen los objetos
  // del sistema o propiedades del sistema
@@ -10,4 +11,13 @@
 
  // en tercer lugar se definen las rutas o 
  // funciones que se van a ejecutar
-app.get('/', (req, res) =>)
+ app.use(routes);
+
+// en cuarto lugar se define el hilo del
+// sistema, el cual escuchara cualquier
+// comunicacion que llegue por url al servidor
+app.listen(port, () => {
+    // le entregaremos por consola un mensaje para identificar
+    // si el servicio se levanto
+    console.log(`Servicio levantado: http://localhost:${port}`);
+});
