@@ -2,7 +2,7 @@
 // O Librerias que necesitaremos en el proyecto
 // en este caso sera solo express
  const express = require('express');
- const routes = require('./routes/routes.js');
+ const routes = require('./routes/index.js');
  const morgan = require('morgan');
  const config = require('./config/config.js')
 
