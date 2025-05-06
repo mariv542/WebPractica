@@ -5,6 +5,7 @@
 
 ## definimos las rutas
 en nuestro archivo productos.routes.js
+
 ![Rutas](img/ProductosRoutes.png)
 
 ---
