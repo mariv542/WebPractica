@@ -11,7 +11,7 @@ ruta.get('/',(req,res) => {
 
 //Crear Producto
 ruta.post('/', (req, res) => {
-    res.send('Peoducto creado')
+    res.send('Producto creado')
 });
 
 //Reemplazar producto
@@ -28,8 +28,6 @@ ruta.patch('/:id', (req, res) => {
 ruta.delete('/:id', (req, res) => {
     res.send(`producto ${req.params.id} eliminado`)
 })
-
-
 
 /////////////////////////////////////////
 
