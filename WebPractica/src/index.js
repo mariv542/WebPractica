@@ -14,8 +14,10 @@
  // funciones que se van a ejecutar
  app.set('port', config.app.port);
  app.use(morgan('dev'));
+ app.use(express.json());
+ app.use(express.urlencoded({extended:true}));
+ 
  app.use(routes);
-
 // en cuarto lugar se define el hilo del
 // sistema, el cual escuchara cualquier
 // comunicacion que llegue por url al servidor
